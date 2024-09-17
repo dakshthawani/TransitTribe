@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="vendors/css/ionicons.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="vendors/css/Grid.css" />
+    <link rel="stylesheet" href="vendors/css/normalize.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="resource/css/style.css">
+</head>
+<body>
+    <header>
+        <nav class="top-bar">
+            <div class="row">
+                <div class="main-navs1">
+                    <ul>
+                        <li>
+                            <button class="btn btn-primary menu-btn" type="button">
+                                <i class="ion-navicon-round"></i>
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+                <div class="logo-container">
+                    <h1><a href="index.html" class="logo-link">TransitTribe</a></h1>
+                </div>
+                <div class="main-navs2">
+                    <ul>
+                        <li><i class="ion-android-person"></i></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        
+        <div class="header-text">
+            <h1>Your Adventure Starts<br> With the Perfect Ride!</h1>
+            <p>The Keys to your Next Adventure is here</p>
+            <!-- <a class="btn btn-full js--scroll-to-plans" href="#">I’m hungry</a> -->
+            <!-- <a class="btn btn-border js--scroll-to-features" href="#">Show me more</a> -->
+        </div>
+    </header>
+     <!-- The sliding menu -->
+     <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <!-- <a href="#">Profile</a> -->
+        <a href="login.html">Log In</a>
+        <a href="#cars">Car Listings</a>
+        <a href="#works">How TransitTribe works</a>
+        <a href="#contact">Customer service</a>
+    </div>
+
+    <section class="Services">
+        <h1>Services & Strategies</h1>
+        <div class="row">
+            <div class="col span-1-of-3 box samples">
+                <img src="resource/img/listings.jpg" alt="">
+                <h2>Car Listings</h2>
+                <p>Over 150,000 available cars for every budget.</p>
+            </div>
+            <div class="col span-1-of-3 box samples">
+                <img src="resource/img/renting.jpg" alt="">
+                <h2>Rent a car</h2>
+                <p>One-on-one assistance from search to purpose.</p>
+            </div>
+            <div class="col span-1-of-3 box samples">
+                <img src="resource/img/contact us.jpg" alt="">
+                <h2>Contact Us</h2>
+                <p>Consultancy for clients with multiple properties.</p>
+            </div>
+        </div>
+    </section>
+    
+    <section class="car-models" id="cars">
+        <h1>SUGGESTED MODELS FOR YOU</h1>
+        <div class="row"></div>
+            <div class="col span-1-of-3 box new-samples">
+                <img src="https://i.pinimg.com/564x/63/ea/20/63ea204c98a6fc5e4d746afc3b16f477.jpg" alt="">
+                <p>Dzire, 6 yr</p>
+                <p>7.5K</p>
+                <p>Available for 6 months</p>
+            </div>
+            <div class="col span-1-of-3 box new-samples">
+                <img src="https://i.pinimg.com/564x/db/76/0d/db760d1e47c3b1d3c228ab0bedad00ab.jpg" alt="">
+                <p>Swift, 8 yr</p>
+                <p>6K</p>
+                <p>Available for 3 months</p>
+            </div>
+            <div class="col span-1-of-3 box new-samples">
+                <img src="https://i.pinimg.com/474x/05/38/58/0538584550d1e56d7e71e002661fe05c.jpg" alt="">
+                <p>Baleno, 4 yr</p>
+                <p>10K</p>
+                <p>Available for 1 year</p>
+            </div>
+        </div>
+        <div class="row"></div>
+            <div class="col span-1-of-3 box new-samples">
+             <img src="https://i.pinimg.com/564x/44/f8/c9/44f8c995dc664939d74a79fd9f621ecc.jpg" alt="">
+                <p>Nexon, 3 yr</p>
+                <p>15K</p>
+                <p>Available for 9 months</p>
+            </div>
+            <div class="col span-1-of-3 box new-samples">
+                <img src="https://i.pinimg.com/564x/14/66/07/146607fe63d779256f2647e89c0790ac.jpg" alt="">
+                <p>Punch, 9 yr</p>
+                <p>13.7K</p>
+                <p>Available for 1 year</p>
+            </div>
+            <div class="col span-1-of-3 box new-samples">
+                <img src="https://i.pinimg.com/564x/d2/13/04/d21304919a65147284a5c8cc094aa2d3.jpg" alt="">
+                <p>Scorpio, 11 yr</p>
+                <p>11K</p>
+                <p>Available for 6 months</p>
+            </div>
+        </div>
+    </section>
+    <section class="About my-5">
+        <div class="container">
+            <div class="row">
+                <!-- Image Section -->
+                <div class="col-md-6 payment-info aa">
+                    <div class="about-image">
+                        <img src="resource/img/I’m the kind of girl to take pictures of the sky.jpeg" alt="Windshield Image" class="img-fluid">
+                    </div>
+                </div>
+    
+                <!-- Text and Destinations Section -->
+                <div class="col-md-6">
+                    <div class="about-text">
+                        <h1>ABOUT US</h1>
+                        <p>
+                            TransitTribe is all about providing mutual benefit by connecting suitable listers with their ideal renters.
+                            We ensure a hassle-free experience for our customers by handling the entire documentation process.
+                            We promise trust and security by holding accountability. Our platform prioritizes resource optimization
+                            and sustainability. Every customer can boost their commuting convenience, flexibility, assurance, and
+                            affordability by choosing TransitTribe.
+                        </p>
+                        <h1>DESTINATIONS</h1>
+                        <div class="row">
+                            <div class="col-lg-4 col-md-6 mb-4 main-city">
+                                <img src="https://www.svgrepo.com/show/237906/gate-of-india-mumbai.svg" alt="Mumbai" class="img-fluid">
+                                <p>Mumbai</p>
+                            </div>
+                            <div class="col-lg-4 col-md-6 mb-4 main-city">
+                                <img src="https://static.thenounproject.com/png/5301313-200.png" alt="Hyderabad" class="img-fluid">
+                                <p>Hyderabad</p>
+                            </div>
+                            <div class="col-lg-4 col-md-6 mb-4 main-city">
+                                <img src="https://www.svgrepo.com/show/3828/sydney-opera-house.svg" alt="Delhi" class="img-fluid">
+                                <p>Delhi</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-6 col-md-12 mb-4 main-city">
+                                <img src="https://static.thenounproject.com/png/3925168-200.png" alt="Chennai" class="img-fluid">
+                                <p>Chennai</p>
+                            </div>
+                            <div class="col-lg-6 col-md-12 mb-4 main-city">
+                                <img src="https://cdn-icons-png.flaticon.com/512/16025/16025176.png" alt="Pune" class="img-fluid">
+                                <p>Pune</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    
+    <section id="works" class="container my-5"></section>
+        <h2 class="text-center mb-4">How TransitTribe works</h2>
+        <div class="row">
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="step">
+                    <div class="step-icon">
+                        <i class="ion-ios-lightbulb-outline"></i>
+                    </div>
+                    <h3>Step 1: Find Your Ideal Car</h3>
+                    <p>Out of the endless options we offer</p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="step">
+                    <div class="step-icon">
+                        <i class="ion-ios-gear-outline"></i>
+                    </div>
+                    <h3>Step 2: Book Your Ride</h3>
+                    <p>Catering to all your needs</p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="step">
+                    <div class="step-icon">
+                        <i class="ion-ios-checkmark-outline"></i>
+                    </div>
+                    <h3>Step 3: Start Your Journey</h3>
+                    <p>With all the possible resources needed for you commute</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="payment">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 payment-info">
+                    <h1>PLACE THE ORDER</h1>
+                    <h2>PAYMENT OPTIONS</h2>
+                    <ul class="list-unstyled">
+                        <li class="d-flex align-items-center mb-3">
+                            <img src="data:image/png;base64,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" alt="">
+                            <a href="#"><p>UPI</p></a>
+                        </li>
+                        <li class="d-flex align-items-center mb-3">
+                            <img src="data:image/png;base64,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" alt="">
+                            <a href="#"><p>BANK TRANSFER</p></a>
+                        </li>
+                        <li class="d-flex align-items-center mb-3">
+                            <img src="data:image/png;base64,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" alt="">
+                            <a href="#"><p>CREDIT CARD</p></a>
+                        </li>
+                        <li class="d-flex align-items-center mb-3">
+                            <img src="https://w7.pngwing.com/pngs/385/158/png-transparent-apple-card-credit-logo-logos-pay-logos-and-brands-icon.png" alt="">
+                            <a href="#"><p>APPLE PAY</p></a>
+                        </li>
+                        <li class="d-flex align-items-center mb-3">
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAARwAAACxCAMAAAAh3/JWAAAAh1BMVEUAAAD////v7+8RERHf39/z8/MmJiYVFRX5+flQUFBubm4+Pj68vLwvLy/o6OhJSUktLS1kZGS2traJiYnX19dpaWmsrKyTk5OAgIBFRUU3Nzd4eHjHx8eioqIdHR3i4uJbW1siIiKEhITPz887Ozujo6OPj4/FxcV7e3uampqwsLC7u7tWVlaUITTxAAAIBElEQVR4nO2da1viPBCGe6BQQAuiyEHlsOiq+/r/f98LbTKZHBooKw1e+9wf9lrTkCZPk8lkGkIUl2STaTcCJd3pJKtUiQ7/5LM0dI2ui3SWS3GKUejKXB+johKnuA1dk2tkWRzEydFvnIzyvTiz0LW4VmZxlMEW15Bm0SR0Ha6XSTQNXYXrZRrB96sF0gAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/FQGsYv7/ZV5ltTQ0UpY1GU7TvailfRWe8ck64T4SuuDU5z1/sq980rJgJcwqc93nHtW0C9fxq92ZSn5yt116XvFeWAlLLO/ESe/o4LufPk+2pcmiv7UVObGK048VCV8nq/MgUQOl75P5LcQ2qQ1HSeOV15x/lNF/FXH2SMM2G3hybMLoU30u7Y+n15x4rEswWsoTqI6kaPjyZEE0SYSj6voKGSSFCfPNER9H40SjFwiW+ZFtv1w0M1O/uG4ng89LbgcG3H3UZQqRJWmok88rbqMnjAxyVgrId5ouVZVct7fdutZkbV6ih7lf3/35OWU0gb+RlyK9+ru71qimJp3c3fVRI3FHPxc/fVsZOpX4ryedPs4eZM6PKqL5IAFOkFpLG6v+xB90Z3+uMURD3Rd/rGUHcfI1D9tPJhGmGk8klPFzRkN+w5eqtt3jGTdNpriDHM5FiLqZWYJp4qz1CfLtbqyKuy0VtkW2gghnrziyMFwEGTJheKcKA6ZrJKMXZCOe964Vd+EFMG6oPV2SxzZoC9yAO0WnCoO9yX40XW0JNk0atE3Ip7OH+uC5vTac4X43Dv1/U8ry8nisJUZ637kPJmdujVkD7DPGhxyU2CLI+eRSMxn+dbKYoqT3uqwrHIA/VZJX/Le9nNrC/HMaBHZVTLIOdYtTrqurrwIy+04dM4UZxrrsLWSWMGwlLF0//j6tl1WpjEdKOPT94pjLCzyvp3DFMdacbNSR4e/+YQtZ8tAq4YDwrAUlPDARviDoxkrJYK22KRV4WpFGY6KEy9VTT50X4C67REX8pIkVQ3ImPZzJhRbTpI4XbUUf+PNpIjMXAXrjovT6amqvCXMatFsECSEUyGqm9HjOTjEG7qsTLLqOWrYrVgryTCkD016DrdUPdZHKKceQW0XsShSy6qDHMp9V0EwEqfHJpQb1Uh6wPdr1RlOEIdPTwrymd9dV1viVtSB5vHKGyNLsKQ2MHE6dFAsTbZxQmnrhuK4wsI96X9aC5I2eTTGhPCKVV+nAAsTR5kXZbHJZr1yM3KSOJkahuZds7F1qT26whzPZYLwCDPqOhQx4OKocCVdppSJT5zeQjEcyKFjRT8phLP5llaeydxsmpw/VfBEdnAuTqxmc9MB3LtNHnE0+mTtDaNLc2TYQ7BF0yi2JE1QXJAJmbnEUcNONGTE/m4uju5hjmRq2HOepQmgKZT6s5p85PsoTZyMXJltog+Mh7PE0RYIV2FwaBBR08ZFnFew6k4c4rAFeBkpo+OqDzaruTiJ/o5XOt5h3sQIbnOj3elSQblGLnHUemcb8wn35ixxFvoFCn09Oj/XDtayys3OIQ6LukzYZFeOQY846e2Y6N5Jcaw1LYW+Ar1wOCC677E54ckljhp2w7igJVHZKo84m5zvmBAK2DEyFfoK86oqIh8lWx7LmDnEYcvpBxWDKY6I43ICnWNHOpdFz3W1BcSscHzCfHGJoyIvU5pVKrmbicNetzN6gY3yq7j98Z9i6brEyR0/b/PcXJwd+0GPBZu0yNkJY5TFgvuUGOS7QxyHqRBvkJuIU7B11TDh3YSMcoh4zlgsq6x3TQ6mLnEKa7342VicnNm7tKNH0skoH7WJ3498ZaASbkzUkmftEMeWtWgszoZ9urTB92ZCHCSGLF8dmAn8uVKj5i5xzFiLbLlHHOPtA5f32UqSIYP2jbKsJpnVfmxDQbp9PW1xWFinRK6JPOKsRhzuxNCqjv1wDlWp7d1uYlmlAqKuzaDq7f2jSxw9hLmgHnXi8oEzo0ITNnvKiIpywVtBxmjpOXWde/EogrlwiRNr68WXvxCH71ngfp98Yu3+9JtoiVpWuTdpq/68I2PAxOFBqpTUbS7Ol3ZTvtskiFEWHecXJexiF2ouu6Oe3XNdLl/JnSvOq3FXZoBDGGXRkoTM8UK461NhK79EP1DmkUYYE4fbAvVytKk40uNSMK+YOlV7RtnadSIMopqdxezh2GyWslYo93qkEtWbm5P2BK5I1ilNWSxQQAHlU7zV72Ao7ke7R6WTo3ww2dhuarLlz3gjSuBb4DtbmVU893wRWaUonuXnPsjZOShBZZBRdmxUuATyfrTpWGjDoxfiefKtyVpe8QmZytJyK69diLXfWfQWKtxxv6KVH528rduKz3fKzmryXIoqcrK17A+jlX06te3WXN4LCOBBPpeR7zsUbYQv7FVUhb7Ofq7JdRFUp/B+o+jyRtnt78Xmg/moy1ax8w2ApqzZK6q5J9/ljbLb34utaHbt14xKJi/ey43ItDv7vrm1tjdlfiuu5XeJGYLwfy/x2fRr9z7lud+5MlZON56s4TZPAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAkwnxu58/hG40PZ7pX2UahT1x+qqZREkrx4P8RNIkCnyQ+xUzi6PWzt35aYzyvThxEeD8zutnWcQHceICfceifzjUqTwGKJ/BKmuks/IUF3FGUjYZhP2hhCtiPJiIE1n+B4QPYTJyoo1EAAAAAElFTkSuQmCC" alt="">
+                        <a href="#"><p>AMEX</p></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-6 payment-info aa">
+                    <img src="resource/img/skoda.png" alt="">
+                </div>
+            </div>
+    </section>
+    <section class="customers">
+        <h1>Satisfied Clients</h1>
+        <ul>
+        <li><div class="col-md-6">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSS6Ck-uWUMyhInk-dcrTIBdw3ZU93bBjAj31B5dYEWr_xtcVA5kChGlgmtKQ&s" alt="">
+            </div>
+            <div class="col-md-6 client-info">
+            <p>I’m a student from Pune completing my master’s in Hyderabad and I had the best experience exploring this city all because of TransiteTribe</p>
+            <p>Moriss</p>
+            <i class="ion-ios-star"></i>
+            <i class="ion-ios-star"></i>
+            <i class="ion-ios-star"></i>
+            <i class="ion-ios-star"></i>
+            <i class="ion-ios-star"></i>
+        </li>
+        <li><div class="col-md-6">
+            <img src="https://media.istockphoto.com/id/1466995518/photo/business-woman-and-worker-portrait-at-office-desk-as-administration-executive-company-manager.jpg?s=612x612&w=0&k=20&c=NvKeG6Fh0_VVfH_N0Ka-5j8284XJhL2VTJfe6IwDkWQ=" alt="">
+            </div>
+            <div class="col-md-6">
+            <p>I’m a student from Pune completing my master’s in Hyderabad and I had the best experience exploring this city all because of TransiteTribe</p>
+            <p>Rita</p>
+            <i class="ion-ios-star"></i>
+            <i class="ion-ios-star"></i>
+            <i class="ion-ios-star"></i>
+            <i class="ion-ios-star"></i>
+            <i class="ion-ios-star"></i>
+            </div>
+        </li>
+        <li><div class="col-md-6">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvHOqSGRmj_SeRuzMpVCHbYeBtLAYKJmk3Vg&s" alt="">
+            </div>
+            <div class="col-md-6">
+            <p>I’m a student from Pune completing my master’s in Hyderabad and I had the best experience exploring this city all because of TransiteTribe</p>
+            <p>Aditya</p>
+            <i class="ion-ios-star"></i>
+            <i class="ion-ios-star"></i>
+            <i class="ion-ios-star"></i>
+            <i class="ion-ios-star"></i>
+            <i class="ion-ios-star-half"></i>
+            </div>
+        </li>
+        <li><div class="col-md-6">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBvqzyx_zoi6q2c0Gd1XnE7wysD9PGOLe3-A&s" alt="">
+            </div>
+            <div class="col-md-6">
+            <p>I’m a student from Pune completing my master’s in Hyderabad and I had the best experience exploring this city all because of TransiteTribe</p>
+            <p>Chris</p>
+            <i class="ion-ios-star"></i>
+            <i class="ion-ios-star"></i>
+            <i class="ion-ios-star"></i>
+            <i class="ion-ios-star"></i>
+            <i class="ion-ios-star"></i>
+            </div>
+        </li>
+        </ul>
+    </section>
+    <section class="faq">
+        <div class="container">
+            <h2>Frequently Asked Questions</h2>
+            <div class="accordion">
+                <div class="accordion-item">
+                    <button class="accordion-button">What is TransitTribe?</button>
+                    <div class="accordion-content">
+                        <p>TransitTribe is a platform that connects vehicle listers with potential renters, ensuring a seamless and hassle-free rental experience.</p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <button class="accordion-button">How do I list my vehicle?</button>
+                    <div class="accordion-content">
+                        <p>To list your vehicle, you can sign up on our website, fill in the vehicle details, and submit the listing form. Our team will review it and get back to you.</p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <button class="accordion-button">What are the payment options?</button>
+                    <div class="accordion-content">
+                        <p>We offer various payment options including credit/debit cards, online bank transfers, and digital wallets.</p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <button class="accordion-button">How can I contact customer support?</button>
+                    <div class="accordion-content">
+                        <p>You can contact our customer support team via the "Contact Us" section on our website or by emailing support@transittribe.com.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>    
+    <section id="contact" class="contact-us">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <div class="contact-details">
+                <div class="contact-info">
+                    <h3>Get in Touch</h3>
+                    <p>If you have any questions, feel free to reach out to us.</p>
+                    <ul>
+                        <li><i class="ion-ios-location"></i> 1234 Street Name, City, Country</li>
+                        <li><i class="ion-ios-telephone"></i> +123 456 7890</li>
+                        <li><i class="ion-ios-email"></i> contact@example.com</li>
+                    </ul>
+                </div>
+                <div class="contact-form">
+                    <h3>Send Us a Message</h3>
+                    <form action="/submit-contact" method="post">
+                        <div class="form-group">
+                            <label for="name">Name:</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject:</label>
+                            <input type="text" id="subject" name="subject" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message:</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>  
+    <footer>
+        <div class="row">
+            <div class="col span-1-of-4">
+                <h2>TransitTribe</h2><br>
+                <p>© 2024 Thawani Corp.<br>All rights reserved.</p>
+            </div>
+            <div class="col span-1-of-4">
+                <h3>Your's Only<br>Guide</h3>
+                <a class="dropdown-item" href="#">Things to do</a>
+                <a class="dropdown-item" href="#">Flights to Rajasthan</a>
+                <a class="dropdown-item" href="#">Accommodations</a>
+                <a class="dropdown-item" href="#">Safe travel in Rajasthan</a>
+            </div>
+            <div class="col span-1-of-4">
+                <h3>Relevant Websites</h3>
+                <a class="dropdown-item" href="#">Travel Trade</a>
+                <a class="dropdown-item" href="#">Media & Press</a>
+                <a class="dropdown-item" href="#">Rajasthan Met Office</a>
+                <a class="dropdown-item" href="#">Road Conditions</a>
+                <a class="dropdown-item" href="#">Rajasthan Tourist Board</a>
+            </div>
+            <div class="col span-1-of-4">
+                <h4>Follow us</h4>
+                <i class="ion-social-facebook"></i>
+                <i class="ion-social-instagram"></i>
+                <i class="ion-social-twitter"></i>
+                <i class="ion-social-linkedin"></i>
+                <i class="ion-social-youtube"></i>
+            </div>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="vendors/js/imakewebthings-waypoints-34d9f6d/lib/jquery.waypoints.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <script src="resource/js/index.js"></script>
+</body>
+</html>
