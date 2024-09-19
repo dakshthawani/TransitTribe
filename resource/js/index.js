@@ -24,34 +24,6 @@ document.addEventListener('DOMContentLoaded', function() {
         console.error('Overlay element not found!');
     }
 
-    // Smooth scroll for anchor links
-    $('a')
-        .not('[href="#"]')
-        .not('[href="#0"]')
-        .click(function(event) {
-            if (
-                location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') 
-                && 
-                location.hostname == this.hostname
-            ) {
-                var target = $(this.hash);
-                target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-                if (target.length) {
-                    event.preventDefault();
-                    $('html, body').animate({
-                        scrollTop: target.offset().top
-                    }, 1000, function() {
-                        var $target = $(target);
-                        $target.focus();
-                        if (!$target.is(":focus")) {
-                            $target.attr('tabindex','-1');
-                            $target.focus();
-                        }
-                    });
-                }
-            }
-        });
-
     // Waypoint animations
     $('.js--wp-1').waypoint(function(direction) {
         $('.js--wp-1').addClass("animated animate__fadeIn");
@@ -78,12 +50,12 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     // Accordion button functionality
-    var accButtons = document.querySelectorAll('.accordion-button');
+    const accButtons = document.querySelectorAll('.accordion-button');
 
     accButtons.forEach(function(button) {
         button.addEventListener('click', function() {
             // Get the next sibling element which is the content
-            var content = this.nextElementSibling;
+            const content = this.nextElementSibling;
 
             // Toggle the display of the content
             if (content.style.display === "block") {
@@ -101,59 +73,47 @@ document.addEventListener('DOMContentLoaded', function() {
             console.log('Accordion button clicked!');
         });
     });
-})
 
-// $(document).ready(function() {
-//     // Smooth scroll for all anchor links
-//     $('a[href*="#"]').on('click', function(event) {
-//         // Check if the link is to a section within the same page
-//         if (this.hash) {
-//             event.preventDefault(); // Prevent default anchor click behavior
+//     // Smooth scroll for anchor links
+// $('a[href*="#"]:not([href="#"])').not('[href="#0"]').click(function(event) {
+//     event.preventDefault();
 
-//             // Get the target element
-//             var target = $(this.hash);
-//             if (target.length) {
-//                 // Calculate the offset position of the target
-//                 var targetOffset = target.offset().top;
+//     // On-page links
+//     if (
+//         location.pathname.replace(/^\//, '') === this.pathname.replace(/^\//, '') && 
+//         location.hostname === this.hostname
+//     ) {
+//         // Figure out element to scroll to
+//         var target = $(this.getAttribute('href'));
+//         target = target.length ? target : $('[name=' + this.getAttribute('href').slice(1) + ']');
+        
+//         // Does a scroll target exist?
+//         if (target.length) {
+//             var targetOffset = target.offset().top; // Get the offset top of the target element
+//             console.log('Target offset:', targetOffset); // Log the target offset value
 
-//                 // If you have a fixed header, adjust the offset
-//                 var headerHeight = $('nav').outerHeight(); // Change 'nav' to your header element if needed
-
-//                 // Animate the scroll, subtracting the header height
-//                 $('html, body').animate({
-//                     scrollTop: targetOffset - headerHeight // Adjust to align the target correctly
+//             // Animate scroll to target
+//             $('html, body').animate({
+//                 scrollTop: targetOffset // Scroll to the target offset
+//             }, 1000, function() {
+//                 console.log('Animation complete!'); // Add a console log statement
+                
+//                 // Callback after animation
+//                 // Must change focus!
+//                 var $target = $(target);
+//                 $target.focus();
+//                 if (!$target.is(":focus")) {
+//                     $target.attr('tabindex', '-1'); // Adding tabindex for elements not focusable
+//                     $target.focus(); // Set focus again
+//                 }
+//                 // Highlight effect (optional)
+//                 $target.addClass('highlight');
+//                 setTimeout(function() {
+//                     $target.removeClass('highlight');
 //                 }, 1000);
-//             }
+//             });
 //         }
-//     });
-
-    // If you have specific buttons to scroll to sections
-//     $('.js--scroll-to-car-models').click(function() {
-//         $('html, body').animate({
-//             scrollTop: $('.js--car-models').offset().top - $('nav').outerHeight()
-//         }, 1000);
-//     });
-
-//     $('.js--scroll-to-contact-us').click(function() {
-//         $('html, body').animate({
-//             scrollTop: $('.js--contact-us').offset().top - $('nav').outerHeight()
-//         }, 1000);
-//     });
-
-//     $('.js--scroll-to-js--container').click(function() {
-//         $('html, body').animate({
-//             scrollTop: $('.js--container').offset().top - $('nav').outerHeight()
-//         }, 1000);
-//     });
+//     }
 // });
 
-
-    
-    
-
-// Add JavaScript error handling
-try {
-    // Code to be executed
-} catch (error) {
-    console.error('Error occurred:', error);
-}
+});
