@@ -16,6 +16,8 @@
     <link rel="stylesheet" href="vendors/css/normalize.css" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="resource/css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 </head>
 <body>
     <header>
@@ -44,19 +46,20 @@
         <div class="header-text">
             <h1>Your Adventure Starts<br> With the Perfect Ride!</h1>
             <p>The Keys to your Next Adventure is here</p>
-            <!-- <a class="btn btn-full js--scroll-to-plans" href="#">I’m hungry</a> -->
-            <!-- <a class="btn btn-border js--scroll-to-features" href="#">Show me more</a> -->
         </div>
     </header>
-     <!-- The sliding menu -->
-     <div id="mySidenav" class="sidenav">
+
+    <!-- Side Navigation Menu -->
+    <div id="mySidenav" class="sidenav">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <!-- <a href="#">Profile</a> -->
         <a href="login.html">Log In</a>
         <a href="#cars">Car Listings</a>
-        <a href="#works">How TransitTribe works</a>
-        <a href="#contact">Customer service</a>
+        <a href="#works">How TransitTribe Works</a>
+        <a href="#contact">Customer Service</a>
     </div>
+
+    <!-- Overlay for side navigation -->
+    <div id="overlay" onclick="closeNav()"></div>
 
     <section class="Services">
         <h1>Services & Strategies</h1>
@@ -129,7 +132,7 @@
             </div>
         </div>
     </section>
-    <section class="car-models" id="cars">
+    <section class="car-models js--car-models" id="cars">
         <h1>SUGGESTED MODELS FOR YOU</h1>
         <div class="row"></div>
             <div class="col span-1-of-3 box new-samples">
@@ -172,7 +175,7 @@
             </div>
         </div>
     </section>
-    <section id="works" class="container my-5"></section>
+    <section id="works" class="container my-5 js--container"></section>
         <h2 class="text-center mb-4">How TransitTribe works</h2>
         <div class="row">
             <div class="col-lg-4 col-md-6 mb-4">
@@ -325,7 +328,7 @@
             </div>
         </div>
     </section>    
-    <section id="contact" class="contact-us">
+    <section id="contact" class="contact-us js--contact-us">
         <div class="container">
             <h2>Contact Us</h2>
             <div class="contact-details">
