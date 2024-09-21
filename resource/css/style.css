@@ -292,6 +292,15 @@ header {
     margin: 0 auto; /* Adjust margin if necessary */
     overflow: hidden; /* Use this to hide overflow content if the content is larger than the section */
   }
+  .list-unstyled a {
+    text-decoration: none; /* Remove underline from links */
+    color: #333; /* Change color as needed */
+    font-weight: bold; /* Bold text for emphasis */
+}
+
+.list-unstyled a:hover {
+    color: #007bff; /* Change color on hover */
+}
   
 .customers h1{
     text-align: center;
@@ -317,7 +326,7 @@ header {
 }
 .customers {
     background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("img/office.jpg");
-    height: 100vh;  /* Full viewport height */
+    height: 130vh;  /* Full viewport height */
     width: 100vw;   /* Full viewport width */
     background-size: cover;  /* Ensure the image covers the entire area */
     background-position: center;
@@ -353,7 +362,7 @@ header {
 .sidenav {
     height: 100%;
     width: 400px; /* Adjust the width as needed */
-    position: fixed;
+    position: absolute;
     top: 0;
     left: -400px; /* Hide the menu initially */
     background-color: rgba(0, 0, 0, 0.5);
@@ -509,10 +518,10 @@ ion-social-youtube:active{
 .js--wp-3.animated {
     opacity: 1;
 }
-#works {
+/* #works {
     background-color: #f9f9f9;
     padding: 40px 0;
-}
+} */
 
 .step {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -657,6 +666,7 @@ ion-social-youtube:active{
 .contact-form button:hover {
     background-color: #0056b3;
 }
+
 .faq {
     padding: 60px 0;
     background-color: #f9f9f9;
@@ -731,4 +741,318 @@ ion-social-youtube:active{
 .logo-link:hover {
     color: #f0f0f0; /* Change color on hover */
     text-decoration: none;
+}
+
+@media only screen and (max-width: 768px) {
+    .Services {
+        padding-top: 30px; /* Reduce padding for smaller screens */
+    }
+    
+    .samples {
+        margin: 10px 0; /* Adjust margin for mobile */
+        padding: 15px; /* Reduce padding for mobile */
+    }
+
+    .Services .row {
+        display: flex;
+        flex-direction: column; /* Stack columns vertically */
+        align-items: center; /* Center-align the items */
+    }
+
+    .Services .box {
+        width: 90%; /* Make each box take most of the width */
+        margin-bottom: 20px; /* Add space between each box */
+    }
+
+    .samples h2 {
+        font-size: 1.4em; /* Slightly reduce font size */
+    }
+
+    .samples p {
+        font-size: 1em; /* Adjust text size for better readability */
+    }
+    .row {
+        display: flex;
+        flex-direction: column; /* Stack all items vertically */
+        align-items: center;
+    }
+
+    .about-image {
+        width: 100%; /* Full width */
+        height: auto; /* Adjust height to fit content */
+        order: 1; /* Display first */
+        margin-bottom: 20px; /* Space below image section */
+    }
+
+    .about-image img {
+        width: 100%;
+        height: auto; /* Maintain aspect ratio */
+    }
+
+    .about-text {
+        padding: 10px;
+        order: 2; /* Display second */
+    }
+
+    .about-text h1 {
+        font-size: 1.6rem;
+        margin-top: 15px;
+    }
+
+    .about-text p {
+        font-size: 1rem;
+        margin-bottom: 15px;
+    }
+
+    .col-md-6 {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .main-city {
+        flex: 0 0 48%; /* Take about half width for each city section */
+        margin: 10px 1%; /* Small margin around each city */
+        order: 3; /* Display third */
+    }
+
+    .main-city img {
+        height: auto; /* Adjust image height */
+        width: 50%; /* Smaller width for city images */
+    }
+
+    /* Adjust flex order for popular cities section */
+    .main-city:nth-of-type(1) { order: 3; } /* First city image */
+    .main-city:nth-of-type(2) { order: 4; } /* Second city image */
+    .main-city:nth-of-type(3) { order: 5; } /* Third city image */
+    .main-city:nth-of-type(4) { order: 6; } /* Fourth city image */
+    .main-city:nth-of-type(5) { order: 7; } /* Fifth city image */
+
+    .top-bar {
+        height: 50px; /* Reduce height for smaller screens */
+        padding: 0 10px; /* Adjust padding */
+        position: absolute;
+        background-color: transparent;
+    }
+
+    .row {
+        flex-direction: column; /* Stack items vertically */
+        align-items: center; /* Center-align all items */
+    }
+
+    .main-navs1, .main-navs2 {
+        position: static; /* Remove absolute positioning */
+        justify-content: center; /* Center-align items */
+        margin-bottom: 10px; /* Space below icons */
+    }
+
+    .main-navs1 li, .main-navs2 li {
+        margin-right: 10px; /* Reduce space between icons */
+    }
+
+    .logo-container {
+        order: 2; /* Display after navigation buttons */
+        margin: 10px 0; /* Space around logo */
+    }
+
+    .header-text {
+        position: static; /* Remove absolute positioning */
+        transform: none; /* Remove centering transformation */
+        text-align: center; /* Center-align text */
+        padding: 20px; /* Add padding */
+        font-size: 20px; /* Adjust font size */
+    }
+
+    .header-text h1 {
+        font-size: 1.5rem; /* Adjust font size for h1 */
+    }
+
+    .header-text p {
+        font-size: 1.2rem; /* Adjust font size for p */
+    }
+
+    header {
+        height: auto; /* Allow header height to adjust */
+        padding-top: 70px; /* Add padding to account for top bar */
+    }
+    
+    .sidenav {
+        /* width: 100%; Full width */
+        height: auto; /* Adjust height */
+        background-color: rgba(0, 0, 0, 0.9);
+        width: 300px; /* Adjust width for mobile */
+        left: -300px; /* Ensure it’s completely off-screen */
+        /* position: absolute; */
+    }
+
+    .sidenav a {
+        padding: 8px 16px; /* Adjust padding */
+        font-size: 1.2rem; /* Increase font size */
+    }
+
+    #overlay {
+        display: none; /* Hide overlay initially */
+    }
+    footer .row {
+        flex-direction: column; /* Stack columns vertically */
+        align-items: center; /* Center align items */
+    }
+
+    footer .col {
+        width: 100%; /* Full width for each column */
+        margin-bottom: 20px; /* Space between columns */
+        text-align: center; /* Center text in each column */
+    }
+
+    footer h2,
+    footer h3 {
+        text-align: center; /* Center align headings */
+        margin-bottom: 15px; /* Adjust margin for better spacing */
+    }
+
+    footer .social-icons {
+        text-align: center; /* Center align social icons */
+        margin: 20px 0; /* Space above and below social icons */
+    }
+
+    footer i {
+        font-size: 25px; /* Adjust icon size */
+        margin: 0 5px; /* Adjust space between icons */
+    }
+
+    footer a {
+        font-size: 16px; /* Slightly smaller font size for links */
+    }
+    .contact-details {
+        flex-direction: column; /* Stack contact-info and contact-form vertically */
+    }
+
+    .contact-info,
+    .contact-form {
+        width: 100%; /* Full width for each section */
+        margin-bottom: 20px; /* Space between sections */
+    }
+
+    .contact-form .form-group {
+        margin-bottom: 15px; /* Adjust form group margin */
+    }
+
+    .contact-form button {
+        width: 100%; /* Full width button */
+        padding: 12px; /* Adjust padding */
+        font-size: 1.1rem; /* Slightly increase button text size */
+    }
+
+    .contact-us h2 {
+        font-size: 2rem; /* Reduce heading size */
+        margin-bottom: 30px; /* Adjust margin */
+    }
+
+    .contact-info ul li {
+        font-size: 0.9rem; /* Adjust font size for better fit */
+    }
+
+    .contact-info ul li i {
+        font-size: 1rem; /* Adjust icon size */
+    }
+
+    .contact-info h3,
+    .contact-form h3 {
+        font-size: 1.3rem; /* Reduce heading size */
+    }
+    .customers {
+        height: 150vh; /* Increase height of the section */
+    }
+
+    .customers li {
+        flex-direction: column; /* Stack image and info vertically */
+        text-align: center; /* Center align text */
+        padding: 20px; /* Adjust padding for smaller screens */
+        margin-bottom: 20px; /* Space between testimonials */
+    }
+
+    .customers img {
+        width: 120px; /* Increased width for better visibility */
+        height: 120px; /* Increased height for better visibility */
+        border-radius: 50%; /* Makes the image circular */
+        object-fit: cover; /* Ensures the image covers the circular area without distortion */
+        margin-bottom: 15px; /* Margin below image */
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+    }
+
+    .client-info p {
+        font-size: 1rem; /* Slightly larger font size for readability */
+        padding: 0 10px; /* Add padding for better spacing */
+    }
+
+    .customers i {
+        font-size: 1.5rem; /* Increase star icon size for visibility */
+        color: gold; /* Change color for better aesthetics */
+    }
+
+    /* Hide testimonials 3 and 4 on mobile */
+    .customers li:nth-child(n+3) {
+        display: none;
+    }
+
+    .payment{
+        height: 140vh;
+    }
+
+    .payment h1 {
+        font-size: 1.8em; /* Smaller font size for header */
+    }
+
+    .payment h2 {
+        font-size: 1.5em; /* Smaller font size for subheader */
+        padding-bottom: 50px; /* Adjust padding for smaller screens */
+    }
+
+    .payment-info {
+        text-align: center; /* Center align content */
+    }
+
+    .aa img{
+        display: none;
+
+    }
+
+    .list-unstyled li {
+        flex-direction: column; /* Stack items vertically */
+        align-items: center; /* Center items */
+        margin-bottom: 15px; /* Space between items */
+    }
+
+    .list-unstyled img {
+        width: 40px; /* Smaller icon size */
+        height: auto; /* Maintain aspect ratio */
+        margin-bottom: 5px; /* Space below icons */
+    }
+    .car-models {
+        padding-left: 0; /* Remove left padding */
+        padding-right: 0; /* Remove right padding if necessary */
+    }
+
+    .car-models .box {
+        margin: 0 auto; /* Center boxes if needed */
+        width: 90%; /* Adjust width to fit the screen better */
+        margin-bottom: 20px; /* Add space after each box */
+    }
+    .step {
+        padding: 15px; /* Adjust padding for smaller screens */
+    }
+
+    .step-icon {
+        font-size: 2em; /* Smaller icons on mobile */
+    }
+
+    h3 {
+        font-size: 1.5em; /* Slightly smaller heading on mobile */
+    }
+
+    p {
+        font-size: 0.9em; /* Smaller text for paragraphs */
+    }
+    /* .section-works{
+        height: 100vh;
+    } */
 }

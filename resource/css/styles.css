@@ -30,7 +30,8 @@ body {
     justify-content: space-between;
     align-items: center;
     color: #FFFFFF;
-    background-color: rgba(0, 0, 0, 0.1); /* Optional: Add background color */
+    background-color: transparent; /* Optional: Add background color */
+    z-index: 1000;
 }
 
 .row {
@@ -73,6 +74,7 @@ header {
     display: flex;
     align-items: center; /* Vertically center the logo */
     text-align: left; /* Align text to the left */
+    z-index: 1000;
 }
 
 .logo-a {
@@ -89,6 +91,7 @@ header {
 .main-navs1 {
     display: flex; /* Ensure items are aligned horizontally */
     justify-content: flex-start; /* Align items to the left */
+    z-index: 10000;
 }
 
 .main-navs2 {
@@ -123,179 +126,6 @@ header {
 
 .main-navs1 li:last-child, .main-navs2 li:last-child {
     margin-right: 0; /* Remove margin for the last item */
-}
-
-.samples{
-    margin-right: 5px;
-    text-align: justify;
-    /* border: 2px solid black; */
-    background-color: whitesmoke;
-    /* border-radius: 3%; */
-    padding: 20px;
-  }
-  .samples img{
-    padding-top: 10px;
-    width: 100%;
-    /* border-radius: 5%; */
-  }
-  .Services{
-    padding-top: 50px;
-  }
-  .Services h1{
-    text-align: center;
-    padding-bottom: 30px;
-  }
-
-  .new-samples{
-    /* margin-right: 5px; */
-    text-align: justify;
-    /* border: 2px solid black; */
-    background-color: whitesmoke;
-    /* border-radius: 3%; */
-    padding: 20px;
-  }
-
-  .new-samples img{
-    padding-top: 10px;
-    width: 100%;
-    height: 300px;
-    /* border-radius: 5%; */
-  }
-  .box{
-    width: 400px;
-    border: solid black 2px;
-  }
-  .car-models{
-    padding-left: 5%;
-    overflow-x: hidden;
-  }
-  .car-models h1{
-    text-align: center;
-    padding-top: 50px;
-    padding-bottom: 50px;
-  }
-  .about-img{
-    /* margin-right: 5px; */
-    text-align: justify;
-    /* border: 2px solid black; */
-    /* background-color: whitesmoke; */
-    /* border-radius: 3%; */
-    /* padding: 20px; */
-  }
-  .about-img img{
-    padding-top: 10px;
-    width: 700%;
-    height: 600px;
-    text-align: left;
-  }
-  .About{
-    padding-top: 100px;
-  }
-  .about-text h1{
-    text-align: justify;
-    padding-left: 100px;
-  }
-  
-  .about-text p{
-    text-align: justify;
-    padding-left: 100px;
-  }
-  .main-cities img{
-    width: 80px;
-    height: 80px;
-  }
-  .main-cities p{
-    width: 80px;
-    height: 80px;
-  }
-/* .payment-info img{
-    height: 50px;
-    width: 50px;
-    text-align: left;
-} */
-.list-unstyled li img{
-    width: 60px;
-    height: 50px;
-}
-.list-unstyled li a{
-    text-align: right;
-    padding: 10px;
-    color: black;
-    font-size: 1.3em;
-}
-.aa img{
-    object-fit: contain;
-    height: 100vh;
-    width: 92vh;
-}
-.payment h1{
-    font-size: 2.5em;
-}
-.payment h2{
-    font-size: 2em;
-    padding-bottom: 100px;
-}
-.payment{
-    height: 100vh; /* Adjust to your desired height */
-    padding: 10px; /* Reduce padding if necessary */
-    margin: 0 auto; /* Adjust margin if necessary */
-    overflow: hidden; /* Use this to hide overflow content if the content is larger than the section */
-  }
-  
-.customers h1{
-    text-align: center;
-    padding: 40px;
-}
-
-.customers ul {
-    list-style-type: none;
-    /* padding: 0; */
-    padding-right: 180px;
-}
-.customers li {
-    display: flex;
-    /* justify-content: space-between; */
-    align-items: center;
-    margin-bottom: 20px;
-}
-
-.customers img {
-    width: 450px;
-    height: 150px;
-    padding-left: 300px;
-}
-.customers {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("img/office.jpg");
-    height: 100vh;  /* Full viewport height */
-    width: 100vw;   /* Full viewport width */
-    background-size: cover;  /* Ensure the image covers the entire area */
-    background-position: center;
-    background-attachment: fixed;
-    margin: 0;
-    padding: 0;
-    position: relative;
-    color: white;
-}
-
-.customers ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-.customers li {
-    display: flex;
-    align-items: center;
-    margin-bottom: 20px; /* Add space between list items */
-}
-
-.col-md-6 {
-    flex: 1;
-}
-/* Basic styling for the header */
-header {
-    position: relative;
-    z-index: 1; /* Ensure header is above other content */
 }
 
 /* Side menu styles */
@@ -333,19 +163,6 @@ header {
     margin-left: 50px;
 }
 
-.overlay {
-    height: 100%;
-    width: 100%;
-    position: fixed;
-    top: 0;
-    left: 0;
-    background-color: rgba(0,0,0,0.5);
-    transition: 0.3s;
-    opacity: 0;
-    visibility: hidden;
-    z-index: 999; /* Below the side menu */
-}
-
 /* Show the side menu and overlay when active */
 .sidenav.active {
     left: 0;
@@ -366,6 +183,7 @@ header {
     font-size: 24px; /* Font size for the icon */
     outline: none; /* Remove default outline */
     transition: all 0.3s ease; /* Smooth transition for hover and active states */
+    z-index: 1000;
 }
 /* Hover effect */
 .menu-btn:hover {
@@ -381,283 +199,6 @@ header {
     color: #000; /* Keep text color the same */
     border-color: #000; /* Keep border color the same */
     transform: scale(0.95); /* Slightly shrink the button when pressed */
-}
-
-footer{
-    background-color: whitesmoke;
-    /* margin-top: 10%; */
-    padding: 5% 0; /* Adjust padding for top and bottom */
-    width: 100%;
-    float: left;
-  }
-  
-  footer i {
-    font-size: 30px;
-    margin: 0 10px; /* Adjust margin between icons */
-}
-
-footer a {
-    font-size: 17px;
-    display: block; /* Ensure links are on new lines */
-    margin-bottom: 5px; /* Space between links */
-}
-  
-footer h2,
-footer h3,
-footer h4 {
-    margin-top: 20px; /* Space above headings */
-}
-
-footer h4 {
-    margin-bottom: 20px; /* Space below h4 */
-    text-align: center; /* Center align heading */
-}
-
-footer .social-icons {
-    text-align: center; /* Center align icons */
-}
-
-footer .social-icons i {
-    margin: 0 10px; /* Space between icons */
-}
-footer i:hover{
-    cursor: pointer;
-}
-.ion-social-facebook:hover,
-.ion-social-facebook:active{
-    color: #316FF6;
-}
-.ion-social-instagram:hover,
-.ion-social-instagram:active{
-    color: #E1306C;
-}
-.ion-social-twitter:hover,
-.ion-social-twitter:active{
-    color: #1DA1F2;
-}
-.ion-social-linkedin:hover,
-.ion-social-linkedin:active{
-    color: blue;
-}
-.ion-social-youtube:hover,
-ion-social-youtube:active{
-    color: red;
-}
-.js--wp-1,
-.js--wp-2,
-.js--wp-3{
-    opacity: 0;
-    animation-duration: 1s;
-}
-.js--wp-4{
-    animation-duration: 1s;
-}
-
-.js--wp-1.animated,
-.js--wp-2.animated,
-.js--wp-3.animated {
-    opacity: 1;
-}
-#works {
-    background-color: #f9f9f9;
-    padding: 40px 0;
-}
-
-.step {
-    text-align: center;
-    padding: 20px;
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.step-icon {
-    font-size: 40px;
-    color: #007bff;
-    margin-bottom: 15px;
-}
-
-.step h3 {
-    margin-bottom: 15px;
-    font-size: 1.5rem;
-    color: #333;
-}
-
-.step p {
-    font-size: 1rem;
-    color: #555;
-}
-
-@media (max-width: 576px) {
-    .step-icon {
-        font-size: 30px;
-    }
-    .step h3 {
-        font-size: 1.25rem;
-    }
-}
-.contact-us {
-    padding: 60px 0;
-    background-color: #f9f9f9;
-}
-
-.container {
-    max-width: 1140px;
-    margin: 0 auto;
-    padding: 0 15px;
-}
-
-.contact-us h2 {
-    text-align: center;
-    margin-bottom: 40px;
-    font-size: 2.5rem;
-    color: #333;
-}
-
-.contact-details {
-    display: flex;
-    justify-content: space-between;
-    gap: 30px;
-}
-
-.contact-info,
-.contact-form {
-    flex: 1;
-    background: #fff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.contact-info h3,
-.contact-form h3 {
-    margin-bottom: 20px;
-    font-size: 1.5rem;
-    color: #333;
-}
-
-.contact-info p {
-    margin-bottom: 20px;
-    color: #555;
-}
-
-.contact-info ul {
-    list-style: none;
-    padding: 0;
-}
-
-.contact-info ul li {
-    display: flex;
-    align-items: center;
-    margin-bottom: 10px;
-    font-size: 1rem;
-    color: #555;
-}
-
-.contact-info ul li i {
-    margin-right: 10px;
-    font-size: 1.2rem;
-}
-
-.contact-form .form-group {
-    margin-bottom: 20px;
-}
-
-.contact-form label {
-    display: block;
-    margin-bottom: 5px;
-    font-weight: bold;
-    color: #333;
-}
-
-.contact-form input,
-.contact-form textarea {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    font-size: 1rem;
-    color: #333;
-}
-
-.contact-form button {
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    font-size: 1rem;
-    border-radius: 4px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-.contact-form button:hover {
-    background-color: #0056b3;
-}
-.faq {
-    padding: 60px 0;
-    background-color: #f9f9f9;
-}
-
-.container {
-    max-width: 1140px;
-    margin: 0 auto;
-    padding: 0 15px;
-}
-
-.faq h2 {
-    text-align: center;
-    margin-bottom: 40px;
-    font-size: 2.5rem;
-    color: #333;
-}
-
-.accordion {
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    background: #fff;
-}
-
-.accordion-item {
-    border-bottom: 1px solid #ddd;
-}
-
-.accordion-item:last-child {
-    border-bottom: none;
-}
-
-.accordion-button {
-    background: #fff;
-    border: none;
-    width: 100%;
-    text-align: left;
-    padding: 15px;
-    font-size: 1.2rem;
-    font-weight: bold;
-    color: #333;
-    cursor: pointer;
-    transition: background 0.3s ease;
-}
-
-.accordion-button:hover {
-    background-color: #f0f0f0;
-}
-
-.accordion-content {
-    display: none;
-    padding: 15px;
-    font-size: 1rem;
-    color: #555;
-}
-
-.accordion-content p {
-    margin: 0;
-}
-body {
-    font-family: 'Arial', sans-serif;
-    background-color: #f4f4f4;
-    margin: 0;
-    padding: 0;
 }
 
 .login-page {
@@ -767,18 +308,7 @@ body {
     text-decoration: underline;
 }
 
-.footer {
-    background-color: #ffffff;
-    padding: 20px;
-    border-top: 1px solid #ddd;
-    text-align: center;
-}
 
-.footer p {
-    margin: 0;
-    color: #202020;
-    font-size: 0.875rem;
-}
 .logo-container h1 {
     margin: 0;
 }
@@ -793,4 +323,53 @@ body {
 
 .logo-link:hover {
     color: #f0f0f0; /* Change color on hover */
+}
+@media (max-width: 768px) {
+    .top-bar {
+        flex-direction: column; /* Stack items vertically */
+        padding: 20px; /* Adjust padding */
+    }
+
+    .menu-btn {
+        z-index: 1000;
+    }
+
+    .header-text {
+        font-size: 20px; /* Smaller font size */
+        text-align: center; /* Center align text */
+    }
+
+    .login-container {
+        width: 90%; /* Adjust width for mobile */
+        padding: 10px; /* Less padding on mobile */
+        height: 75vh;
+        z-index: 1;
+    }
+
+    .login-form h1 {
+        font-size: 2rem; /* Smaller font size for mobile */
+    }
+
+    .login-form form input,
+    .login-form button {
+        padding: 8px; /* Less padding for inputs and buttons */
+    }
+
+    .social-login {
+        flex-direction: column; /* Stack buttons vertically */
+    }
+
+    .social-login .btn {
+        width: 100%; /* Full width for buttons */
+        margin-bottom: 10px; /* Space between buttons */
+    }
+    
+    .sidenav {
+        /* width: 100%; Full width */
+        height: auto; /* Adjust height */
+        background-color: rgba(0, 0, 0, 0.9);
+        width: 300px; /* Adjust width for mobile */
+        left: -300px; /* Ensure it’s completely off-screen */
+        /* position: absolute; */
+    }
 }

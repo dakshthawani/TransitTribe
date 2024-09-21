@@ -2,12 +2,14 @@
 function openNav() {
     document.getElementById("mySidenav").classList.add('active');
     document.getElementById("overlay").classList.add('active');
+    document.getElementById("mySidenav").style.left = "0"; // Show the sidenav
 }
 
 // Function to close the side navigation
 function closeNav() {
     document.getElementById("mySidenav").classList.remove('active');
     document.getElementById("overlay").classList.remove('active');
+    document.getElementById("mySidenav").style.left = "-400px"; // Hide it again
 }
 
 // Event listeners for side navigation, ensuring they run after the DOM is loaded
@@ -40,13 +42,13 @@ document.addEventListener('DOMContentLoaded', function() {
     $('.js--wp-3').waypoint(function(direction) {
         $('.js--wp-3').addClass("animated animate__fadeIn");
     }, {
-        offset: '30%'
+        offset: '0%'
     });
 
     $('.js--wp-4').waypoint(function(direction) {
         $('.js--wp-4').addClass("animated animate__pulse");
     }, {
-        offset: '30%'
+        offset: '0%'
     });
 
     // Accordion button functionality
@@ -73,6 +75,22 @@ document.addEventListener('DOMContentLoaded', function() {
             console.log('Accordion button clicked!');
         });
     });
+    $(document).ready(function(){
+        console.log('Document is ready');
+        $('.js--section-features').waypoint(function(direction){
+            console.log('Waypoint triggered:', direction); // Debugging statement
+            if(direction == 'down'){
+                console.log('Adding sticky class');
+                $('nav').addClass('sticky');
+            } else {
+                console.log('Removing sticky class');
+                $('nav').removeClass('sticky');
+            }
+        }, {
+            offset: '0px'
+        });
+    });
+})
 
 //     // Smooth scroll for anchor links
 // $('a[href*="#"]:not([href="#"])').not('[href="#0"]').click(function(event) {
@@ -116,4 +134,4 @@ document.addEventListener('DOMContentLoaded', function() {
 //     }
 // });
 
-});
+// });
