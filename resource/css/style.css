@@ -39,8 +39,8 @@ body {
 }
 
 .top-bar.sticky {
-    background-color: rgb(255, 255, 255, 0.97);
-    box-shadow: 1px 1px 1px #dddddd;
+    /* background-color: rgb(255, 255, 255, 0.97); */
+    /* box-shadow: 1px 1px 1px #dddddd; */
     transition: background-color 0.3s ease; /* Add transition for smooth background color change */
 }
 
@@ -326,7 +326,7 @@ header {
 }
 .customers {
     background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("img/office.jpg");
-    height: 130vh;  /* Full viewport height */
+    height: 110vh;  /* Full viewport height */
     width: 100vw;   /* Full viewport width */
     background-size: cover;  /* Ensure the image covers the entire area */
     background-position: center;
@@ -782,6 +782,7 @@ ion-social-youtube:active{
         height: auto; /* Adjust height to fit content */
         order: 1; /* Display first */
         margin-bottom: 20px; /* Space below image section */
+        display: none;
     }
 
     .about-image img {
@@ -801,7 +802,7 @@ ion-social-youtube:active{
 
     .about-text p {
         font-size: 1rem;
-        margin-bottom: 15px;
+        margin-bottom: 105px;
     }
 
     .col-md-6 {
@@ -969,14 +970,18 @@ ion-social-youtube:active{
         padding: 20px; /* Adjust padding for smaller screens */
         margin-bottom: 20px; /* Space between testimonials */
     }
+    .customers h1 {
+        z-index: 1000;
+    }
 
     .customers img {
         width: 120px; /* Increased width for better visibility */
         height: 120px; /* Increased height for better visibility */
-        border-radius: 50%; /* Makes the image circular */
+        border-radius: 100%; /* Makes the image circular */
         object-fit: cover; /* Ensures the image covers the circular area without distortion */
         margin-bottom: 15px; /* Margin below image */
         box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+        z-index: 1001;
     }
 
     .client-info p {
